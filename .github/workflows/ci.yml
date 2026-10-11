@@ -16,6 +16,11 @@ permissions:
   contents: read
   issues: write
 
+# La API de pruebas guarda estado en el servidor, asi que no se deben cruzar dos corridas
+concurrency:
+  group: karate-api-tests
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
