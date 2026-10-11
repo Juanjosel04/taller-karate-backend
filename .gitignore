@@ -1,0 +1,17 @@
+.gradle/
+build/
+target/
+!gradle/wrapper/gradle-wrapper.jar
+.kotlin/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Otros
+.vscode/
+.DS_Store
+*.log
